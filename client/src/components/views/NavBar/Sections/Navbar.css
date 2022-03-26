@@ -1,0 +1,58 @@
+@import '~antd/dist/antd.css';
+
+.menu {
+  width: 100%;
+  min-width: 500px;
+  height: 75px;
+  border-top: solid 1px #e8e8e8;
+  overflow: auto;
+  box-shadow: 0 0 30px #f3f1f1;
+  background-color: white;
+  bottom: 0;
+}
+
+.menu__container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.menu__container > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu__container .menu__item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  width: 100px;
+  max-width: 20%;
+  min-width: fit-content;
+}
+
+.menu__container .menu__item:hover {
+  font-size: 1.1rem;
+  color: darkslategray;
+}
+.menu__container .menu__item:active {
+  font-size: 1.1rem;
+  color: orange;
+}
+
+.menu__container .menu__item_icon {
+  font-size: 2.2rem;
+}
+
+.tab_default {
+  color: gray;
+}
+.tab_selected {
+  color: orange;
+}
