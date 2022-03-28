@@ -1,6 +1,4 @@
 import React from 'react'
-import Banner from '../Banner/Banner'
-import ShopName from '../ShopName/ShopName'
 
 function Header(props) {
     // props 로 selectedTab 값을 받아서 처리 ? 

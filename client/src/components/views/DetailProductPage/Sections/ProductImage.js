@@ -3,7 +3,7 @@ import ImageSlider from '../../../utils/ImageSlider'
 
 function ProductImage(props) {
   return (
-    <div>
+    <div className="productImage">
       <ImageSlider images={props.image} />
     </div>
   )

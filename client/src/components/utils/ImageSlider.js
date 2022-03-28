@@ -8,7 +8,8 @@ function ImageSlider(props) {
                 {props.images && props.images.map((image, index) => (
                     <div key={index} className="banner_item">
                         <img className="banner_image" 
-                            src={`http://localhost:5000/${image}`} />
+                            src={`http://localhost:5000/${image}`} 
+                            alt='banner' />
                     </div>
                 ))}
             </Carousel>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import ProductBox from './Sections/ProductBox'
 import './Sections/Product.css'
 import CartButton from './Sections/CartButton'

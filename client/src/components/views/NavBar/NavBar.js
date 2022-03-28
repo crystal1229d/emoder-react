@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { AiOutlineHome, AiOutlineUser, AiOutlineFileText, AiOutlineShoppingCart } from 'react-icons/ai';
 import './Sections/Navbar.css';
 

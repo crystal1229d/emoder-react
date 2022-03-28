@@ -6,6 +6,8 @@ let menu = [
         name: '아메리카노',
         image: [ "uploads/아메리카노.PNG" ],
         price: "4000",
+        badge: '1',
+        optionGroup: [ 0, 1, 2 ], 
     },
     {
         id: 1,
@@ -13,6 +15,8 @@ let menu = [
         name: '아인슈페너',
         image: [ "uploads/아인슈페너01.PNG", "uploads/아인슈페너02.PNG" ],
         price: "9000",
+        badge: '1',
+        optionGroup: [ 0, 1, 2 ], 
     },
     {
         id: 2,
@@ -20,6 +24,8 @@ let menu = [
         name: '카페라떼',
         image: [ "uploads/카페라떼.PNG" ],
         price: "5000",
+        badge: '0',
+        optionGroup: [ 0, 1, 2 ], 
     },
     {
         id: 3,
@@ -27,6 +33,8 @@ let menu = [
         name: '시나몬라떼',
         image: [ "uploads/시나몬라떼.PNG" ],
         price: "6000",
+        badge: '0',
+        optionGroup: [ 0, 1, 2 ], 
     },
     {
         id: 4,
@@ -34,6 +42,8 @@ let menu = [
         name: '청귤에이드',
         image: [ "uploads/청귤에이드.PNG" ],
         price: "7000",
+        badge: '0',
+        optionGroup: [ 0 ], 
     },
     {
         id: 5,
@@ -41,6 +51,8 @@ let menu = [
         name: '흑당슈페너',
         image: [ "uploads/흑당슈페너01.PNG", "uploads/흑당슈페너02.PNG" ],
         price: "8000",
+        badge: '0',
+        optionGroup: [ 0, 1, 2 ], 
     },
     {
         id: 6,
@@ -48,6 +60,7 @@ let menu = [
         name: '말차트라이앵글',
         image: [ "uploads/말차트라이앵글.PNG" ],
         price: "12000",
+        badge: '0',
     },
     {
         id: 7,
@@ -55,6 +68,7 @@ let menu = [
         name: '앙버터',
         image: [ "uploads/앙버터.PNG" ],
         price: "10000",
+        badge: '1',
     },
     {
         id: 8,
@@ -62,6 +76,7 @@ let menu = [
         name: '얼그레이롤',
         image: [ "uploads/얼그레이롤.PNG" ],
         price: "14000",
+        badge: '0',
     },
     {
         id: 9,
@@ -69,6 +84,8 @@ let menu = [
         name: '크로플',
         image: [ "uploads/크로플.PNG" ],
         price: "15000",
+        badge: '0',
+        optionGroup: [ 3 ], 
     },
 ] 
 

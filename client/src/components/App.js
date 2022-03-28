@@ -5,8 +5,8 @@ import Auth from "../hoc/auth";
 import LandingPage from "./views/LandingPage/LandingPage.js";
 // import LoginPage from "./views/LoginPage/LoginPage.js";
 // import RegisterPage from "./views/RegisterPage/RegisterPage.js";
-import NavBar from "./views/NavBar/NavBar";
-import Footer from "./views/Footer/Footer"
+// import NavBar from "./views/NavBar/NavBar";
+// import Footer from "./views/Footer/Footer"
 // import UploadProductPage from "./views/UploadProductPage/UploadProductPage.js";
 import CartPage from './views/CartPage/CartPage';
 import DetailProductPage from "./views/DetailProductPage/DetailProductPage";

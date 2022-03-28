@@ -1,10 +1,13 @@
-import Axios from 'axios';
+// import Axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import './Sections/DetailProductPage.css';
 import { menu } from '../../../data/Menu'
+import { optionGroup } from '../../../data/OptionGroup'
+import { option } from '../../../data/Option'
 import ProductImage from './Sections/ProductImage'
 import ProductInfo from './Sections/ProductInfo'
 import AddToCartButton from './Sections/AddToCartButton'
+import DetailProductPageHeader from './Sections/DetailProductPageHeader';
 
 function DetailProductPage(props) {
 
@@ -21,19 +24,50 @@ function DetailProductPage(props) {
         //     })
         //     .catch(err => alert(err))
 
-        menu.map(item => {
-            if (item.id === productId*1) {
-                setProduct(item);
-                setTotalSum(item.price);
-            }
-        })
+        getProducts()
 
     }, [])
-    
 
-    return (
+    const getProducts = () => {
+
+        menu.map(item => {
+            if (item.id === productId*1) {
+                let matchOptionGroup = [];
+                let matchOption = [];
+
+                if (item.optionGroup.length > 0) {
+
+                    item.optionGroup.forEach(function(optionGroupId) {
+                        optionGroup.map((group) => {
+                            if (group.id === optionGroupId) {
+                                matchOptionGroup.push(group)
+                                matchOption = [];
+
+                                option.map((opt) => {
+                                    if (opt.group_id === optionGroupId) {
+                                        matchOption.push(opt)
+                                    }
+                                })
+
+                                matchOptionGroup[optionGroupId]['option'] = matchOption
+
+                            }
+                        })
+                    })
+
+                    item['optionGroup'] = matchOptionGroup
+                }
+
+                setProduct(item)
+                setTotalSum(item.price)
+            }
+        })
+        
+    }
+
+    return ( 
         <div className="detailProductPage">
-            <div>Back</div>
+            <DetailProductPageHeader />
             <ProductImage image={Product.image}/>
             <ProductInfo product={Product} />
             <AddToCartButton totalSum={TotalSum} />
